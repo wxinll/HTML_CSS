@@ -5,18 +5,38 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style type="text/css">
+    body{
+    	background-color: grey;
+    }
     	div.head{
+    		margin-top: 0;
     		background-color: #68cdd5;
     		height: 45px;
     		color: white;
+    		display: flex;
+    		justify-content: space-between;
+    		align-items: center;
     	}
     	span.left{
-    		margin-left: 0px;
-    		margin-top: 22.5px;
+    		margin-left: 4vmin;
     	}
-    	span.center{
-    		height: line-height;
+    	span.right{
+    		margin-right: 4vmin;
+    	}
+    	input.act{
+    		margin-top: 5px;
+    	}
+    	div.foot{
+    		background-color: #68cdd5;
+    		margin-top: 50vmin;
+    		height: 60px;
     		font-weight: bold;
+    		font-size: 1.1em;
+    		color: white;
+    		vertical-align: center;
+    		line-height: 60px;
+    		text-align: center;
+    		text
     	}
     </style>
 </head>
@@ -25,10 +45,16 @@
 		<div class="head">
 			<span class="left">注册</span>
 			<span class="center">登录</span>
-			<span>关闭</span>
+			<span class="right">关闭</span>
 		</div>
 	</header>
-	<header>pppp</header>
+	<form>
+		<input type="text" name="account" value="请输入账号">
+		<br>
+		<input type="password" name="pwd" value="请输入密码">
+	</form>
+
+	<div class="foot">登    录</div>
 
 </body>
 </html>
