@@ -5,9 +5,11 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style type="text/css">
-    body{
-    	background-color: grey;
-    }
+        body{
+    	background-color: #EFF0F4;
+        margin-left: 0;
+        margin-right: 0; 
+        }
     	div.head{
     		margin-top: 0;
     		background-color: #68cdd5;
@@ -17,44 +19,83 @@
     		justify-content: space-between;
     		align-items: center;
     	}
-    	span.left{
-    		margin-left: 4vmin;
+        div.head a{
+            text-decoration: none;
+            color: white;
+        }
+        div.input{
+            margin-top: 10px;
+            background-color: white;
+        }
+    	input.account, input.pwd{
+            outline:none;
+            font-size: 1em;
+            height: 60px;
+            padding-left: 80px;
+            border:none;
+            margin-top: 10px;
     	}
-    	span.right{
-    		margin-right: 4vmin;
-    	}
-    	input.act{
-    		margin-top: 5px;
-    	}
-    	div.foot{
+        form i{
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 70%;
+            margin-top: 10px;
+            width: 80px;
+            height: 62px;
+        }
+        .iconact{
+            position: absolute;
+            background-image: url(./images/phone.png);
+        }
+        .iconpwd{
+            position: absolute;
+            background-image: url(./images/pwd.png);
+        }
+    	.foot{
     		background-color: #68cdd5;
-    		margin-top: 50vmin;
+    		margin-top: 60px;
     		height: 60px;
     		font-weight: bold;
     		font-size: 1.1em;
     		color: white;
-    		vertical-align: center;
     		line-height: 60px;
     		text-align: center;
-    		text
     	}
+        footer a{
+            text-decoration: none;
+            float: right;
+            padding-top: 20px;
+        }
     </style>
 </head>
 <body>
-	<header>
-		<div class="head">
-			<span class="left">注册</span>
-			<span class="center">登录</span>
-			<span class="right">关闭</span>
-		</div>
-	</header>
-	<form>
-		<input type="text" name="account" value="请输入账号">
-		<br>
-		<input type="password" name="pwd" value="请输入密码">
-	</form>
+    <header>
+    <div class="head">
+        <a href="" class="left">关闭</a>
+        <span>登陆</span>
+        <a href="" class="right">注册</a>
+    </div>
+    </header>
 
-	<div class="foot">登    录</div>
+    <main>
+    <form>
+        <div class="input">
+        <i class="iconact"></i>
+        <input class="account" type="text" name="account" value="" placeholder="请输入账号">
+        </div>
+        <div class="input">
+            <i class="iconpwd"></i>
+            <input class="pwd" type="password" name="pwd" value="" placeholder="请输入密码">
+        </div>
+    </form>
+    </main>
+
+    <div class="foot">
+        登  陆
+    </div>
+    <footer>
+        <a href="">忘记密码?</a>
+    </footer>
 
 </body>
 </html>
