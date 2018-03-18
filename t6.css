@@ -34,15 +34,19 @@
 			background: url(./images/spr_t6.png);
 		}
 		.gps_icon{
-			display: inline-block;
-			width: 19px;
-			height: 23px;
-			background-position: -95px -26px;
+			position: absolute;
+			right: 10px;
+			top:50%;
+			transform: translateY(-50%) scale(0.7,0.7);
+			width: 42px;
+			height: 44px;
+			background-position: -44px -171px;
 		}
 		.edit_icon{
 			width: 93px;
 			height:94px;
 			background-position:0px 0px;
+			transform:scale(0.6,0.6);	
 		}
 		footer{
 			position: fixed;
@@ -55,7 +59,7 @@
 			align-items: center;
 			background-color: #f8fafb;
 		}
-		div.ftcenter{
-			margin-left:50px; 
-			margin-right:50px;
+		footer div.ftcenter{
+			width: 57px;
+			height: 57px;
 		}
