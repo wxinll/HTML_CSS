@@ -1,3 +1,4 @@
+		
 		body{
 			margin-left: 0;
 			margin-right: 0;
@@ -68,9 +69,9 @@
 			overflow: scroll;
 		}
 		div.box{
-			height: 85px;
-			padding: 15px 10px;
-			border-bottom:black solid 1px;
+			padding: 15px 3vw;
+			border-bottom:#e1e5e7 solid 1px;
+			background-color: #ffffff;
 		}
 		div.boxend{
 			margin-bottom: 100px;
@@ -78,13 +79,24 @@
 		div.box>div{
 			display: flex;
 			align-items: center;
-			height: 33%;
+			height: 2em;
 		}
 		div.date,div.location{
 			color: #C0C0C0;
 		}
 		div.content{
 			padding-left: 34px;
+			white-space: nowrap;
+		}
+		div.content>div{
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+		div.content>img{
+			margin-left: 0.8em;
+		}
+		div.location{
 			overflow: hidden;
 			white-space: nowrap;
 			text-overflow: ellipsis;
@@ -103,13 +115,22 @@
 			bottom: 0;
 			display: flex;
 			width: 100%;
-			height: 60px;
-			border-top: 1px solid black;
+			border-top: 1px solid #e2eaec;
 			justify-content: center;
 			align-items: center;
 			background-color: #f8fafb;
 		}
 		footer div.ftcenter{
-			margin-left: 30px;
-			margin-right: 30px;
+			margin:5px 15vw;
+		}
+		footer>div{
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+		}
+		footer div span{
+			margin-top: 0.3em;
+		}
+		span.shouye{
+			color: #5fc0cd;
 		}
