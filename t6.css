@@ -68,6 +68,32 @@
 			margin-top: 50px;
 			overflow: scroll;
 		}
+		div.list{
+			position:fixed; 
+			display: flex;
+			width: 100%;
+			background:#C0C0C0;
+		}
+		.dropdown{
+			/*position: inherit;*/
+			width: 100%;
+			padding: 10px 0;
+			background: #ffffff;
+			border-bottom:#e1e5e7 solid 1px;
+		}
+		.btn{
+
+			border-right: 1px #e1e5e7 solid;
+			border-radius: 0;
+			width: 100%;
+			background: #ffffff;
+		}
+		span.caret{
+			margin-left: auto;
+		}
+		div.boxstart{
+			margin-top: 55px;
+		}
 		div.box{
 			padding: 15px 3vw;
 			border-bottom:#e1e5e7 solid 1px;
@@ -105,10 +131,6 @@
 			margin-left: auto;
 			display: inline-block;
 			color: red;
-		}
-		.list{
-			height: 50px;
-			background:	#C0C0C0;
 		}
 		footer{
 			position: fixed;
