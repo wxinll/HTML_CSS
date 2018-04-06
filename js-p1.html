@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>js@jsshu</title>
+	<style type="text/css">
+		.parent{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			width: auto;
+			border: solid 1px red;
+		}
+		.child{
+			width:31%;
+			height: 30vw;
+			border: solid 1px orange;
+			border-radius: 10%;
+			margin-bottom: 2%;
+		}
+		.start,.end{
+			line-height: 30px;
+			width: 100%;
+			background-color: transparent;
+			color: orange;
+			border:solid orange 1px;
+			outline: none;
+		}
+		.end{
+			margin-top: 10px;
+		}
+		.start:hover,.end:hover{
+			background-color: orange;
+			color: white;
+		}
+	</style>
+	<script type="text/javascript">
+		function shan(){
+			var a = document.getElementById("f1");
+			a.style.backgroundColor="red";
+		}
+		function clear(){
+			var b = document.getElementById("f1");
+			b.style.backgroundColor="black";
+		}
+	</script>
+</head>
+<body>
+	<div class="parent">
+		<div id="f1" class="child"></div>
+		<div class="child"></div>
+		<div class="child"></div>
+		<div class="child"></div>
+		<div class="child"></div>
+		<div class="child"></div>
+		<div class="child"></div>
+		<div class="child"></div>
+		<div class="child"></div>
+		<button class="start" onclick="shan()">开始闪</button>
+		<button class="end" onclick="clear()">结束闪</button>
+	</div>
+</body>
+</html>
