@@ -36,29 +36,34 @@
 		}
 	</style>
 	<script type="text/javascript">
+		var ys;
 		function shan(){
-			var a = document.getElementById("f1");
-			a.style.backgroundColor="red";
+			ys = setInterval(
+					function(){
+						var a = document.getElementsByClassName('child');
+						var i = Math.floor(Math.random()*9);
+						a[i].style.backgroundColor="orange";
+					},1000
+				);
 		}
-		function clear(){
-			var b = document.getElementById("f1");
-			b.style.backgroundColor="black";
+		function ccc(){
+			clearInterval(ys);
 		}
 	</script>
 </head>
 <body>
 	<div class="parent">
 		<div id="f1" class="child"></div>
-		<div class="child"></div>
-		<div class="child"></div>
-		<div class="child"></div>
-		<div class="child"></div>
-		<div class="child"></div>
-		<div class="child"></div>
-		<div class="child"></div>
-		<div class="child"></div>
+		<div id="f2" class="child"></div>
+		<div id="f3" class="child"></div>
+		<div id="f4" class="child"></div>
+		<div id="f5" class="child"></div>
+		<div id="f6" class="child"></div>
+		<div id="f7" class="child"></div>
+		<div id="f8" class="child"></div>
+		<div id="f9" class="child"></div>
 		<button class="start" onclick="shan()">开始闪</button>
-		<button class="end" onclick="clear()">结束闪</button>
+		<button class="end" onclick="ccc()">结束闪</button>	
 	</div>
 </body>
 </html>
