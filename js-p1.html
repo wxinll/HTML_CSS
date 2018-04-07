@@ -37,17 +37,52 @@
 	</style>
 	<script type="text/javascript">
 		var ys;
+
 		function shan(){
-			ys = setInterval(
-					function(){
-						var a = document.getElementsByClassName('child');
-						var i = Math.floor(Math.random()*9);
-						a[i].style.backgroundColor="orange";
-					},1000
-				);
+			if (ys == 1){}
+				else{
+				// clearInterval(ys);
+					ys = setInterval(
+						function(){	
+							var a = document.getElementsByClassName('child');
+							
+							for (var i = 0; i < 9; i++){
+							a[i].style.backgroundColor="white";
+							}
+
+							var rand1 = Math.floor(Math.random()*9);
+							var rand2 = Math.floor(Math.random()*9);
+							var rand3 = Math.floor(Math.random()*9);
+
+							while (rand1 === rand2){
+								rand2 = Math.floor(Math.random()*9);
+							}
+							while (rand1 === rand3 || rand2 == rand3){
+								rand3 = Math.floor(Math.random()*9);
+							}
+							var rand = [rand1,rand2,rand3];				
+							
+							for (var i = 0; i < 3; i++){
+							 a[rand[i]].style.backgroundColor=randomRgbColor();
+							}
+						},500
+					);
+				}	
 		}
+
 		function ccc(){
 			clearInterval(ys);
+			var a = document.getElementsByClassName('child');
+			for (var i = 0; i < 9; i++){
+			a[i].style.backgroundColor="white";
+			}
+		}
+
+		function randomRgbColor(){
+			 var r = Math.floor(Math.random() * 256); //随机生成256以内r值
+			 var g = Math.floor(Math.random() * 256); //随机生成256以内g值
+			 var b = Math.floor(Math.random() * 256); //随机生成256以内b值
+			 return `rgb(${r},${g},${b})`;
 		}
 	</script>
 </head>
