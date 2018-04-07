@@ -13,13 +13,22 @@
 		.box a{
 			font-size: 1.2em;
 		}
+		a:visited{
+			color: black;
+		}
+		a:hover{
+			color: red;
+		}
 	</style>
+	<script type="text/javascript">
+		document.getElementById(moditime).innerHTML=document.write(document.lastModified);
+	</script>
 </head>
 
 <body>
 	<h1>learn css@jsshu</h1>
 	<p>tasks have been finished</p>
-	<h2>last modify time: 3-13 2018</h2>
+	<h2 id="moditime">last modify time:</h2>
 	<div class="box">
 		<ol>
 			<li><a href="./a.html">task1</a></li>
@@ -27,6 +36,7 @@
 			<li><a href="./c.html">task4</a></li>
 			<li><a href="./task_5.html">task5</a></li>
 			<li><a href="./task_6.html">task6</a></li>
+			<li><a href="./js-p1.html">js-task1</li>
 		</ol>
 	</div>
 </body>
