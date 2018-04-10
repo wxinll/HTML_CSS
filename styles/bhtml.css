@@ -1,0 +1,33 @@
+	body{
+		background-color: #68cdd5;
+	}
+	img.back{
+		width: 40px;
+	}
+	img.center{
+		display: block;
+		margin: 0 auto;
+		width: 90px;
+		margin-top: 20vmin;
+	}
+	p.margin
+	{
+		margin:20vmin 10vmin 10vmin;
+	}
+	div.margin{
+		margin-top: 20vmin;
+	}
+	img.left{
+		width: 55px;
+		float: left;
+		margin-left: 10vmin;
+	}
+	img.right{
+		width: 48px;
+		float: right;
+		margin-right: 10vmin;
+	}
+	p{
+		color: white;
+		font-size: 1em;
+	}
